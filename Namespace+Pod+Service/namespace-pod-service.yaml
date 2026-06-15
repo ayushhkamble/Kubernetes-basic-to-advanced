@@ -1,0 +1,41 @@
+# Namespace Creation
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
+
+---
+# Pod Creation
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  namespace: dev
+  labels:
+    app: nginx
+
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+
+    ports:
+    - containerPort: 80
+
+---
+# Service Creation
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: dev
+
+spec:
+  selector:
+    app: nginx
+
+  ports:
+  - port: 80
+    targetPort: 80
+
+  type: ClusterIP
