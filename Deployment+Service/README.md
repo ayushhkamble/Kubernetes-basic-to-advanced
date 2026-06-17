@@ -4,9 +4,9 @@ A hands-on walkthrough of two foundational Kubernetes objects — **Deployments*
 
 ## Table of Contents
 - [Concepts](#concepts)
-  - [What is a Deployment?](#what-is-a-deployment)
-  - [What is a Service?](#what-is-a-service)
-  - [Service Types Explained](#service-types-explained)
+- [What is a Deployment?](#what-is-a-deployment)
+- [What is a Service?](#what-is-a-service)
+- [Service Types Explained](#service-types-explained)
 - [Project Structure](#project-structure)
 - [Project Workflow](#project-workflow)
 - [Verification](#verification)
